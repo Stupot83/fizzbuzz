@@ -35,4 +35,14 @@ describe('FizzBuzz', () => {
       expect(fizzBuzz.play(30)).toEqual('FizzBuzz');
     });
   });
+
+  describe('all other numbers', () => {
+    it('1 for 1', () => {
+      expect(fizzBuzz.play(1)).toEqual(1);
+    });
+
+    it('11 for 11', () => {
+      expect(fizzBuzz.play(11)).toEqual(11);
+    });
+  });
 });
