@@ -16,13 +16,23 @@ describe('FizzBuzz', () => {
     });
   });
 
-  describe('multiples of 5', function() {
-    it('buzzes for 5', function() {
+  describe('multiples of 5', () => {
+    it('buzzes for 5', () => {
       expect(fizzBuzz.play(5)).toEqual('Buzz');
     });
 
-    it('buzzes for 10', function() {
+    it('buzzes for 10', () => {
       expect(fizzBuzz.play(10)).toEqual('Buzz');
+    });
+  });
+
+  describe('multiples of 3 and 5', () => {
+    it('fizzbuzzes for 15', () => {
+      expect(fizzBuzz.play(15)).toEqual('FizzBuzz');
+    });
+
+    it('fizzbuzzes for 30', () => {
+      expect(fizzBuzz.play(30)).toEqual('FizzBuzz');
     });
   });
 });
